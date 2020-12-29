@@ -1,23 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Большой театр</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/e3bd3298f7.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
+
 <body>
-    <div>hello World</div>
-    <div>
-        <ul>
-            <li>git clone path-to-repository</li>
-            <li>git status  -  статус текущего локального репозитория</li>
-            <li>git add path-to-file - добавить новый файл под контролоь GITa</li>
-            <li>git commit -am "added new file index.html" - зафиксировать изменения и дать им коммент</li>
-            <li>git push - отправить на сервер</li>
-            <li>git pull  -  получить данный новые с сервера</li>
-            <li></li>
-            <li></li>
-        </li>
+    <div class="menu-burger">
+        <div>
+            <a href="#" class="close"><img src="img/carbon_close.png" alt=""></a>
+            <a href="#" class="menu__item">Главная</a><br>
+            <a href="javascript://0" class="menu__item" id="aboutTheater__tittle1">о театре</a><br>
+            <a href="javascript://0" class="menu__item" id="staging__tittle1">Наши постановки</a><br>
+            <a href="javascript://0" class="menu__item" id="partners__tittle1">партнеры театра</a><br>
+            <a href="javascript://0" class="menu__item" id="maecenas__tittle1">контакты</a>
+        </div>
+        <div class="links">
+            <div class="row">
+                <div class="col-3 col-sm-3 offset-2 link-top ">
+                   <a href='https://www.facebook.com/'><i  class="fa fa-3x fa-facebook" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div class="col-3 col-sm-3 offset-1 link-top ">
+                   <a href='https://www.instagram.com/?hl=ru'><i  class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div class="col-3 col-sm-3 offset-2 ">
+                   <a href='https://www.youtube.com'><i  class="fa fa-3x fa-youtube" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div class="col-3 col-sm-3 offset-1 ">
+                   <a href='https://vk.com/'><i  class="fa fa-3x fa-vk" aria-hidden="true"></i></a>
+                    
+                </div>
+            </div>
+        </div>
     </div>
+
+   
+    <div class="menu-left">
+        <p>
+            <nobr>контактная информация</nobr>
+        </p>
+        <div class="menu-left__line"></div>
+        <div class="icon">
+            <a href='https://www.facebook.com/'><i  class="fa fa-facebook" aria-hidden="true"></i></a><br>
+            <a href='https://www.instagram.com/?hl=ru'><i  class="fa fa-instagram" aria-hidden="true"></i></a><br>
+            <a href='https://vk.com/'><i  class="fa fa-vk" aria-hidden="true"></i></a><br>
+            <a href='https://www.youtube.com'><i  class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    
+    <div class="wrapper-first">
+        <div class="container">
+<!-------------------HEADER START------------------------->
+            <header class="header">
+                <div class="row justify-content-end justify-content-lg-start">
+<!--         left MENU start         -->
+                   <div class="col-4 col-sm-1 d-block d-lg-none header__menu-burger">
+                       <a href="javascript://0"><img src="img/burger.svg" alt="menu"></a>
+                   </div>
+<!--         left MENU end         -->                   
+                   <div class="col-8 col-sm-4 d-block d-lg-none text-sm-right text-right">
+                       <a href="tel:+74951234567" class="header__item-last-menu">
+<!--         номер телефона при маленьких разрешениях         -->   
+                            <nobr>+7 495 123-45-67</nobr>
+                        </a>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-9 col-xl-9 offset-lg-2 offset-xl-0 text-xl-left r"> 
+                        <a href="#" class="header__item">Главная</a>
+                        <a href="javascript://0" class="header__item" id="aboutTheater__tittle">о театре</a>
+                        <a href="javascript://0" class="header__item" id="staging__tittle">Наши постановки</a>
+                        <a href="javascript://0" class="header__item" id="partners__tittle">партнеры театра</a>
+                        <a href="javascript://0" class="header__item" id="maecenas__tittle">контакты</a>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-12 col-xl-2 offst-xl-1 text-xl-right text-lg-center ">
+                        <a href="tel:+74951234567" class="header__item-last">
+                            <nobr>+7 495 123-45-67</nobr>
+                        </a>
+                    </div>
+                </div>
+            </header>
+<!-------------------HEADER ENF-------------------------> 
+           
+<!-------------------PRESENTATION SATRT------------------------->                   
+            <div class="presentation">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-12 col-12 offset-md-1 offset-lg-2 offset-xl-0">
+                        <h3 class="presentation__tittle">Большой театр</h3>
+                        <p class="presentation__text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в  Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных  зданий в Европе XVIII.</p>
+                        <button type="button" class="presentation__btn">афиша</button>
+                    </div>
+                    
+                    <div class="col-xl-5 d-none d-xl-block text-center">
+                        <div class="www">
+                            <img src="img\presentation-right-img.png" alt="poster" class="presentation__first-img">
+                            <img src="img\presentation-right-img-back.png" alt="poster" class="presentation__second-img">
+                            <div class="presentation__btn-left">
+                                <button href="" class="presentation__btn-left__btn"><img src="img\arrow-left.svg" alt="left">пред</button>
+                            </div>
+                            <div class="presentation__btn-right">
+                                <button class="presentation__btn-right__btn">след<img src="img\arrow-right.svg" alt="right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-------------------PRESENTATION END------------------------->     
+<!--       снизу DIV контейнера-->
+        </div>      
+    </div>
+    
+<!-------------------aboutTheater START------------------------->   
+    <div class="wrapperSecond">
+        <div class="aboutTheater">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-12">
+                        <h3 class="aboutTheater__tittle tittle">
+                            <p class="gold">о</p> театре
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-8 offset-lg-2 offset-xl-0 text-md-left text-center">
+                        <h4 class="aboutTheater__sub-tittle">Самый лучший театр СПБ</h4>
+                        <p class="aboutTheater__text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4">
+                       <div class="row">
+                            <div class="col-sm-12 text-center text-md-left">
+                                <h4 class="aboutTheater__info-tittle">немного о цифрах</h4>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-5 col-md-12 offset-sm-1 offset-md-0">  
+                                    <img src="img/icon1.svg" alt="">
+                                    <h5 class="aboutTheater__tittle-min">
+                                    <p class="gold">1600</p> посадочный мест</h5>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-12 offset-sm-1 offset-md-0">     
+                                    <img src="img/icon2.svg" alt="">
+                                    <h5 class="aboutTheater__tittle-min">
+                                    <p class="gold">350</p> лет истории</h5>
+                                </div>
+                            </div>    
+                    </div>
+                    <div class="col-xl-4 d-none d-xl-block ">
+                        <img src="img/imgAbout.png" alt="" class="aboutTheater__img-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------aboutTheater END-------------------------> 
+      
+      
+       <!-------------------aboutTheater END------------------------->        
+        <div class="staging">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="staging__tittle tittle">
+                            <p class="gold">наши</p> постановки
+                        </h2>
+                    </div>
+                </div>
+<!--
+                    <button class="slider__button-left">&laquo;</button>
+                    
+                    <div id="slide">
+                        <img src="img/slider_1.png" class="slide-single" alt="OOps">  
+                        <img src="img/slider_2.png" class="slide-single" alt="OOps">  
+                        <img src="img/slider_3.png" class="slide-single" alt="OOps">  
+                        <img src="img/slider_4.png" class="slide-single" alt="OOps">  
+                    </div>
+-->
+               
+               <div class="wrapper">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button class="btn-prev">prev</button>
+                        <button class="btn-next">next</button>
+                    </div>
+               </div>
+               
+               
+                <div class="staging__foot">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-12 offset-xl-2 offset-lg-2 offset-md-1 offset-sm-1 text-md-left text-center staging__foot__years">
+                            <h2 class="staging__foot__years__item">2018</h2><br>
+                            <h2 class="staging__foot__years__item">2019</h2><br>
+                            <h2 class="staging__foot__years__item">2020</h2><br>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-7 col-12 text-md-left text-center offset-xl-1">
+                            <div class="staging__foot__star">
+                                <img src="img/star.svg" alt="" class="staging__foot__star__item">
+                                <img src="img/star.svg" alt="" class="staging__foot__star__item">
+                                <img src="img/star.svg" alt="" class="staging__foot__star__item">
+                                <img src="img/star.svg" alt="" class="staging__foot__star__item">
+                                <img src="img/star.svg" alt="" class="staging__foot__star__item">
+                            </div>
+                            <div class="staging__foot__text">
+                                <p>Лучший театр <br> по мнению театральных <br> критиков Парижа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------STAGING END------------------------->
+        
+        <!------------------PARTNERS START------------------------->
+        <div class="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-12">
+                        <h2 class="partners__tittle tittle">
+                            <p class="gold">партнеры</p> театра
+                        </h2>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-3 col-sm-6 col-md-4 text-center">
+                        <img src="img/gaz.png" alt="" class="partners__item ">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-sm-block text-center">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-sm-block text-center">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-sm-block text-center">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-md-block text-center hide1">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-md-block text-center hide1">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-xl-block text-center hide2">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-4 d-none d-xl-block text-center hide2">
+                        <img src="img/gaz.png" alt="" class="partners__item">
+                    </div>
+                </div>
+                <div class="row text-center d-block d-xl-none">
+                    <div class="partners__button col-12"><button class="partners__button-max">БОЛЬШЕ</button><button class="partners__button-min d-none">СКРЫТЬ</button></div>
+                </div>
+            </div>
+        </div>
+        <!------------------PARTNERS END------------------------->
+        
+        <!------------------MAECENAS START------------------------->
+        <div class="maecenas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="maecenas__tittle tittle">
+                            <p class="gold">стать</p> меценатом
+                        </h2>
+                    </div>
+                </div>
+                <div class="row ">
+                   <div class="col-xl-3 d-none d-xl-block maecenas__contacts">
+                        <div class="maecenas__contacts__item">
+                                <a href="tel:+78121234555">+7 (812) 123-45-55</a>
+                        </div>
+                        <div class="maecenas__contacts__item">
+                                <a href="tel:+78121234566">+7 (812) 123-45-66</a>
+                        </div>
+                        <div class="maecenas__contacts__item">
+                                <a href="info@theater.ru">info@theater.ru</a>
+                        </div>
+                        <div class="maecenas__contacts__item">
+                                <a href="www.yandex.ru/maps">г. санкт-петербург, невский 140</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 offset-xl-1 offset-lg-2">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 text-center text-sm-left ">
+                                <input type="text" name="name" placeholder="QИмя" class="maecenas__form__item">
+                                <input type="text" name="company" placeholder="Компания" class="maecenas__form__item maecenas__form__item-company"> <br>
+                                <input type="text" name="tel" placeholder="Телефон" class="maecenas__form__item">
+                                <input type="text" name="email" placeholder="E-mail" class="maecenas__form__item maecenas__form__item-email">
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 text-center text-sm-center pl-xl-0">
+                                <div class="">
+                                <input type="text" name="messange" placeholder="QСообщение" class="maecenas__form__item-last">
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="d-none">
+                        <input type="text" name="messange" placeholder="Cообщение" class="maecenas__form__item-last">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12 offset-lg-2 offset-xl-4 d-none d-md-block">
+                        <div class="maecenas__info">
+                            <p>* !!!Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 offset-md-1 offset-lg-0 text-center text-sm-center text-md-right">
+                        <button type="button" class="maecenas__btn">Отправить</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center d-block d-md-none">
+                        <div class="maecenas__info">
+                            <p>* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="row ">
+                        <div class="col-lg-2 offset-lg-2 col-md-3 col-sm-5 col-12 text-center text-sm-left d-block d-xl-none ">
+                            <div class="maecenas__contacts__item">
+                                <a href="tel:+78121234555">+7 (812) 123-45-55</a>
+                            </div>
+                            <div class="maecenas__contacts__item">
+                                <a href="tel:+78121234566">+7 (812) 123-45-66</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-12 col-sm-7 offset-md-4 offset-lg-3 text-center text-sm-right d-block d-xl-none">
+                            <div class="maecenas__contacts__item">
+                                <a href="info@theater.ru">info@theater.ru</a>
+                            </div>
+                            <div class="maecenas__contacts__item">
+                                <a href="www.yandex.ru/maps">г. санкт-петербург, невский 140</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!------------------MAECENAS END------------------------->
+               
+<!------------------FOOTER START------------------------->                                               
+                <footer class="footer">
+                    <div class="footer__polosa">
+                        <div class="row">
+                            <div class="col-lg-12 felx">
+                                <p>(с) Все права защищены. Большой театр. 2020</p>
+                                <p>Разработано d-e-n.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+<!------------------FOOTER END------------------------->                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
